@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop</title>
+    <!--Google Font CDN-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <!--DaisyUI CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .sora{
+            font-family: "Sora", serif;
+             }
+        .adlam-display-regular {
+            font-family: "ADLaM Display", serif;
+             }
+    </style>
+</head>
+
+<body>
+    <!-- header section -->
+    <header class="bg-orange-50">
+        <nav class="container mx-auto">
+            <div class="navbar">
+                <div class="navbar-start justify-between w-full lg:w-6/12">
+                    <a class="flex items-center space-x-2">
+                        <span class="text-yellow-400 text-2xl"><img src="c1-assets/logo-header.png" alt=""></span>
+                        <span class="font-semibold text-xl sora hidden lg:flex">Browse<span class="text-yellow-500">4</span>Pets</span>
+                    </a>
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    
+                </div>
+                </div>
+                <div class="navbar-center hidden lg:flex sora">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Find a pet</a></li>
+                    <li><a>Breed</a></li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end gap-x-6 hidden lg:flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                      </svg>
+                        <button class="btn btn-outline btn-warning ">Login</button>
+                        <a class="btn btn-warning">Register</a>
+              </div>
+        </nav>
+    </header>
+    <!-- main section-->
+    <main>
+        <section>
+        <p class="adlam-display-regular">
+            Pamper Your Pet, Because They Deserve the Best.
+        </p>
+        <p class="sora">
+            Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
+        </p>
+        <button class="btn btn-warning sora">Find a pet</button>
+        </section>
+    </main>
+    <!-- footer section -->
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
